@@ -10,8 +10,10 @@ namespace LinkedList_Programs
             linkedList.Add(50);
             linkedList.Add(45);
             linkedList.Add(26);
-
             Console.WriteLine("Linked List Created");
+            linkedList.Display();
+
+           
         }
     }
 }
