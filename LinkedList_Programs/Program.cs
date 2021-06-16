@@ -7,9 +7,9 @@ namespace LinkedList_Programs
         static void Main(string[] args)
         {
             LinkedList linkedList = new LinkedList();
-            linkedList.Add(50);
-            linkedList.Add(45);
-            linkedList.Add(26);
+            linkedList.Append(26);
+            linkedList.Append(45);
+            linkedList.Append(50);
             Console.WriteLine("Linked List Created");
             linkedList.Display();
 
