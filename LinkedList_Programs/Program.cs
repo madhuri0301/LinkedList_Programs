@@ -6,7 +6,12 @@ namespace LinkedList_Programs
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome To The LinkedList Programs");
+            LinkedList linkedList = new LinkedList();
+            linkedList.Add(50);
+            linkedList.Add(45);
+            linkedList.Add(26);
+
+            Console.WriteLine("Linked List Created");
         }
     }
 }
