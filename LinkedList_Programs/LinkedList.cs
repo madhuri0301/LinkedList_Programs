@@ -65,6 +65,19 @@ namespace LinkedList_Programs
                 node.next = after;
             }
         }
+        public Node RemoveFirstElement()
+        {
+            if (head == null)
+            {
+                Console.WriteLine("Linked List is empty.");
+            }
+            else
+            {
+                head = head.next;
+            }
+            return this.head;
+
+        }
         public void Display() // method to display the value
         {
             if (head == null)
