@@ -7,7 +7,7 @@ namespace LinkedList_Programs
     class LinkedList
     {
         Node head;
-        public void Add(int data)
+        public void Add(int data) // method to add new linked list
         {
             Node node = new Node(data);
             if (head == null)
@@ -20,7 +20,7 @@ namespace LinkedList_Programs
                 head = node;
             }
         }
-        public void Append(int data)
+        public void Append(int data) // method to append the value to linked list
         {
             Node node = new Node(data);
             if (head == null)
@@ -37,7 +37,7 @@ namespace LinkedList_Programs
                 n.next = node;
             }
         }
-        public void InsertAtGivenPosition(int position, int data)
+        public void InsertAtGivenPosition(int position, int data) // method to insert an element on a given position
         {
             Node node = new Node(data);
             if (position < 1)
@@ -65,7 +65,7 @@ namespace LinkedList_Programs
                 node.next = after;
             }
         }
-        public void Display()
+        public void Display() // method to display the value
         {
             if (head == null)
             {
