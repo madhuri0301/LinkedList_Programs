@@ -11,8 +11,8 @@ namespace LinkedList_Programs
             linkedList.Append(45);
             linkedList.InsertAtGivenPosition(2, 30); //inserting element on 2nd Position 
             linkedList.Display();
-            Console.WriteLine("Removed first element ", +linkedList.RemoveFirstElement().data);
             Console.WriteLine("Linked List Created");
+            Console.WriteLine("Remove last element ", +linkedList.RemoveLastElement().data); // Removing Last Element
             linkedList.Display();
 
            

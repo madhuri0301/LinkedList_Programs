@@ -65,7 +65,7 @@ namespace LinkedList_Programs
                 node.next = after;
             }
         }
-        public Node RemoveFirstElement()
+        public Node RemoveFirstElement() //method for Removing first Element
         {
             if (head == null)
             {
@@ -77,6 +77,25 @@ namespace LinkedList_Programs
             }
             return this.head;
 
+        }
+        public Node RemoveLastElement() //method for Removing Last Element
+        {
+            if (head == null)
+            {
+                Console.WriteLine("Linked List is empty.");
+                return null;
+            }
+            else
+            {
+                Node NewNode = head;
+                while (NewNode.next.next != null)
+                {
+                    NewNode = NewNode.next;
+                }
+                Node removedNode = NewNode.next;
+                NewNode.next = null;
+                return removedNode;
+            }
         }
         public void Display() // method to display the value
         {
