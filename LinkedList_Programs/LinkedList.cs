@@ -37,6 +37,34 @@ namespace LinkedList_Programs
                 n.next = node;
             }
         }
+        public void InsertAtGivenPosition(int position, int data)
+        {
+            Node node = new Node(data);
+            if (position < 1)
+            {
+                Console.WriteLine("Invalid Position");
+            }
+            else if (position == 1)
+            {
+                node.next = head;
+                head = node;
+            }
+            else
+            {
+                Node n = head, previous = head, after;
+                for (int pos = 1; pos < position; pos++)
+                {
+                    n = n.next;
+                    if (pos == position - 2)
+                    {
+                        previous = n;
+                    }
+                }
+                after = n;
+                previous.next = node;
+                node.next = after;
+            }
+        }
         public void Display()
         {
             if (head == null)
