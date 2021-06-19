@@ -4,7 +4,7 @@ using System.Text;
 
 namespace LinkedList_Programs
 {
-    class LinkedList
+    public class LinkedList
     {
         Node head;
         public void Add(int data) // method to add new linked list
@@ -65,7 +65,7 @@ namespace LinkedList_Programs
                 node.next = after;
             }
         }
-        public Node RemoveFirstElement() //method for Removing first Element
+        internal Node RemoveFirstElement() //method for Removing first Element
         {
             if (head == null)
             {
@@ -78,7 +78,7 @@ namespace LinkedList_Programs
             return this.head;
 
         }
-        public Node RemoveLastElement() //method for Removing Last Element
+        internal Node RemoveLastElement() //method for Removing Last Element
         {
             if (head == null)
             {
@@ -95,6 +95,22 @@ namespace LinkedList_Programs
                 Node removedNode = NewNode.next;
                 NewNode.next = null;
                 return removedNode;
+            }
+        }
+        public bool Search(int item) //method To Search The Element From Linked List 
+        {
+            if (head == null)
+                return false;
+            else
+            {
+                Node temp = head;
+                while (temp != null)
+                {
+                    if (temp.data == item)
+                        return true;
+                    temp = temp.next;
+                }
+                return false;
             }
         }
         public void Display() // method to display the value

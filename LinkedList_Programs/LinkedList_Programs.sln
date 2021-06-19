@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31313.79
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkedList_Programs", "LinkedList_Programs.csproj", "{53154101-76AF-4F1E-92DF-6819A70674E4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinkedList_Programs", "LinkedList_Programs.csproj", "{53154101-76AF-4F1E-92DF-6819A70674E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkedListTest", "..\LinkedListTest\LinkedListTest.csproj", "{0C72A2DC-700C-466F-950D-D14E59A16A06}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{53154101-76AF-4F1E-92DF-6819A70674E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{53154101-76AF-4F1E-92DF-6819A70674E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{53154101-76AF-4F1E-92DF-6819A70674E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C72A2DC-700C-466F-950D-D14E59A16A06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C72A2DC-700C-466F-950D-D14E59A16A06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C72A2DC-700C-466F-950D-D14E59A16A06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C72A2DC-700C-466F-950D-D14E59A16A06}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
