@@ -97,7 +97,7 @@ namespace LinkedList_Programs
                 return removedNode;
             }
         }
-        public bool Search(int item) //method To Search The Element From Linked List 
+        public bool Search(int data) //method To Search The Element From Linked List 
         {
             if (head == null)
                 return false;
@@ -106,13 +106,43 @@ namespace LinkedList_Programs
                 Node temp = head;
                 while (temp != null)
                 {
-                    if (temp.data == item)
+                    if (temp.data == data)
                         return true;
                     temp = temp.next;
                 }
                 return false;
             }
         }
+        public void DeleteNode(int data) //Method To Delete The Node
+        {
+            Node temp = head, prev = null;
+            if (temp != null && temp.data == data)
+            {
+                head = temp.next;
+                return;
+            }
+            while (temp != null && temp.data != data)
+            {
+                prev = temp;
+                temp = temp.next;
+            }
+            if (temp == null)
+                return;
+            prev.next = temp.next;
+        }
+
+        public int Count() //Method To Count The Node
+        {
+            Node temp = head;
+            int count = 0;
+            while (temp != null)
+            {
+                count++;
+                temp = temp.next;
+            }
+            return count;
+        }
+
         public void Display() // method to display the value
         {
             if (head == null)

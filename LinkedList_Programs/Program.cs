@@ -15,7 +15,12 @@ namespace LinkedList_Programs
             Console.WriteLine(linkedList.Search(15));
             Console.WriteLine("Linked List Created");
             Console.WriteLine("Remove last element ", +linkedList.RemoveLastElement().data); // Removing Last Element
-            linkedList.Display();           
+            linkedList.Display();
+
+            linkedList.DeleteNode(40); //Deleting The E#lement
+            Console.WriteLine("After Deletion ");
+            linkedList.Display();
+            Console.WriteLine("Linkelist Size " + linkedList.Count()); //Finding Size Of Node
         }
     }
 }
