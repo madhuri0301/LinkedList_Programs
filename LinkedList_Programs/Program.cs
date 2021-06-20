@@ -9,7 +9,8 @@ namespace LinkedList_Programs
             LinkedList linkedList = new LinkedList();
             linkedList.Append(26);
             linkedList.Append(45);
-            linkedList.InsertAtGivenPosition(2, 30); //inserting element on 2nd Position 
+            linkedList.Append(30);
+            linkedList.InsertAtGivenPosition(3, 40); //inserting element on 2nd Position //UC4 and UC8
             linkedList.Display();
             Console.WriteLine(linkedList.Search(15));
             Console.WriteLine("Linked List Created");
