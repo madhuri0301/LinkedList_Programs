@@ -15,5 +15,14 @@ namespace LinkedList_Programs
             this.next = null;
         }
     }
+    public class Node1
+    {
+        internal int data;
+        internal Node1 next;
+        public Node1(int data)
+        {
+            this.data = data;
+        }
+    }
 }
 

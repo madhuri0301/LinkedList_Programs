@@ -7,6 +7,7 @@ namespace LinkedList_Programs
     public class LinkedList
     {
         Node head;
+        Node1 head1;
         public void Add(int data) // method to add new linked list
         {
             Node node = new Node(data);
@@ -142,6 +143,25 @@ namespace LinkedList_Programs
             }
             return count;
         }
+        public void SortedList(int data) //Sorting An Elements
+        {
+            Node1 newNode = new Node1(data);
+            Node1 Current;
+            if (head1 == null || head1.data >= newNode.data)
+            {
+                newNode.next = head1;
+                head1 = newNode;
+            }
+            else
+            {
+                Current = head1;
+                while (Current.next != null && Current.next.data < newNode.data)
+                    Current = Current.next;
+
+                newNode.next = Current.next;
+                Current.next = newNode;
+            }
+        }
 
         public void Display() // method to display the value
         {
@@ -159,6 +179,21 @@ namespace LinkedList_Programs
                 }
                 Console.Write(n.data + "\n");
             }
+        }
+        internal void Display1() //To Display The Sorted List
+        {
+            Node1 temp = head1;
+            if (temp == null)
+            {
+                Console.Write("LinkedList is Emplty...");
+                return;
+            }
+            while (temp != null)
+            {
+                Console.Write(temp.data + " -> ");
+                temp = temp.next;
+            }
+            Console.Write("\n");
         }
     }
 }

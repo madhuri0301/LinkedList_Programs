@@ -21,6 +21,14 @@ namespace LinkedList_Programs
             Console.WriteLine("After Deletion ");
             linkedList.Display();
             Console.WriteLine("Linkelist Size " + linkedList.Count()); //Finding Size Of Node
+
+            linkedList.SortedList(56);
+            linkedList.SortedList(30);
+            linkedList.SortedList(70);
+            linkedList.SortedList(40);
+            Console.Write("Sorted List is :");
+            linkedList.Display1();
+            
         }
     }
 }
